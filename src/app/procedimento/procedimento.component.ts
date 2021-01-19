@@ -13,6 +13,7 @@ export class ProcedimentoComponent implements OnInit {
     nome: "",
     prazoDias: ""
   });
+  
   constructor(
     private formBuilder: FormBuilder,
     private procedimentoService: ProcedimentoService
