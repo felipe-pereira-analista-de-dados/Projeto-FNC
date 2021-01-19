@@ -1,0 +1,26 @@
+<h2>Procedimento</h2>
+<form [formGroup]="formularioProcedimento" (ngSubmit)="onSubmit()">
+	<div>
+		<label for="codigo">
+      Código
+    </label>
+		<input id="codigo" type="number" formControlName="codigo">
+  </div>
+
+	<div>
+		<label for="nome">
+      Nome
+    </label>
+		<input id="nome" type="text" formControlName="nome">
+  </div>
+  
+  <div>
+    <label for="prazoDias">
+        Prazo máximo para análise em dias
+    </label>
+    <input id="prazoDias" type="number" formControlName="prazoDias">
+  </div>
+    
+  <button class="button" type="submit">Cadastrar</button>
+
+</form>

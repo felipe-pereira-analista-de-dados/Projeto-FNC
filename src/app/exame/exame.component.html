@@ -1,0 +1,33 @@
+<h2>Exame</h2>
+<form [formGroup]="formularioExame" (ngSubmit)="onSubmit()">
+	<div>
+		<label for="paciente">
+      Paciente
+    </label>
+		<input id="paciente" type="text" formControlName="paciente">
+  </div>
+
+	<div>
+		<label for="procedimento">
+      Procedimento
+    </label>
+		<input id="procedimento" type="text" formControlName="procedimento">
+  </div>
+  
+  <div>
+    <label for="dataColeta">
+        Data de Coleta
+    </label>
+    <input id="dataColeta" type="text" formControlName="dataColeta">
+  </div>
+
+  <div>
+    <label for="dataResultado">
+        Data de entrega do resultado
+    </label>
+    <input id="dataResultado" type="text" formControlName="dataResultado">
+  </div>
+
+	<button class="button" type="submit">Cadastrar</button>
+
+</form>

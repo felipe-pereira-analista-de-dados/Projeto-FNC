@@ -1,0 +1,26 @@
+<h2>Paciente</h2>
+<form [formGroup]="formularioPaciente" (ngSubmit)="onSubmit()">
+	<div>
+		<label for="nome">
+      Nome
+    </label>
+		<input id="nome" type="text" formControlName="nome">
+  </div>
+
+	<div>
+		<label for="cpf">
+      CPF
+    </label>
+		<input id="cpf" type="text" formControlName="cpf">
+  </div>
+  
+  <div>
+    <label for="email">
+      Email
+    </label>
+    <input id="email" type="email" formControlName="email">
+  </div>
+
+	<button class="button" type="submit">Cadastrar</button>
+
+</form>
